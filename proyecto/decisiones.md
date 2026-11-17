@@ -1,7 +1,8 @@
 # Decisiones de mi sitio
 
-**Emprendimiento:** Proyecto trenzas marketing  
-**Fecha:** 4 de noviembre de 2026 · **Última corrección:** 4 de noviembre de 2026
+**Emprendimiento:** Trenzadora (Proyecto trenzas marketing)  
+**Sitio en producción:** https://proyectotrenzadora.infinityfree.io/  
+**Fecha:** 4 de noviembre de 2026 · **Última corrección:** 18 de noviembre de 2026 (Checkpoint)
 
 ---
 
@@ -25,11 +26,11 @@ Cinco páginas seleccionadas para la primera fase del sitio web. Se respetan las
 
 | # | Página | Por qué la elijo (una línea) |
 |---|---|---|
-| 1 | **Inicio** (obligatoria) | Es la portada principal que presenta la propuesta de valor del emprendimiento y da la bienvenida a las interesadas en el mundo de las trenzas. |
+| 1 | **Inicio** (obligatoria) | Es la portada principal que presenta la propuesta de valor del emprendimiento y da la bienvenida a las interesadas en el mundo de las trenzas africanas. |
 | 2 | **Contacto** (obligatoria) | Permite que las potenciales clientas resuelvan dudas, coticen estilos específicos y coordinen citas directamente. |
 | 3 | **Nosotros** | Comparte la historia, técnica, trayectoria y el compromiso con el cuidado y la salud capilar de las clientas (definida en Fase 1). |
-| 4 | **Servicios** | Presenta el catálogo de tipos de trenzas disponibles (box braids, trenzas pegadas, africanas) con descripciones y tiempos aproximados. |
-| 5 | **Blog** | Espacio informativo con artículos sobre cómo cuidar el cabello trenzado, lavado adecuado y tendencias (con las 3 entradas de la Fase 1). |
+| 4 | **Servicios** | Presenta el catálogo de tipos de trenzas disponibles (box braids, trenzas pegadas, trenzas africanas) con descripciones y tiempos aproximados. |
+| 5 | **Blog** | Espacio informativo con artículos sobre cómo cuidar el cabello trenzado, lavado adecuado y tendencias (con las 3 entradas temáticas). |
 
 ### Páginas que dejo para después
 
@@ -91,11 +92,14 @@ Estrategia de mitigación ante posibles eventualidades técnicas durante el desa
 
 ## Cambios respecto de la Sumativa 2 (solo en el checkpoint del 18 nov)
 
-*(Esta sección se completará en la Entrega 3 en caso de realizar ajustes a las decisiones tomadas).*
+Evaluación del estado del proyecto al hito del Checkpoint (18 de noviembre):
 
 | Qué cambié | Qué había antes | Por qué | Evidencia (captura o commit) |
 |---|---|---|---|
-| *(Pendiente)* | *(Pendiente)* | *(Pendiente)* | *(Pendiente)* |
+| **Nombre comercial e identidad de marca** | Nombre de proyecto general "Proyecto trenzas marketing". | Se formalizó el nombre visible del sitio a **Trenzadora** en la identidad del sitio y en la URL de producción (`https://proyectotrenzadora.infinityfree.io/`) para conectar mejor con la audiencia interesada en peinados con trenzas africanas. | Sitio activo en `https://proyectotrenzadora.infinityfree.io/` y título del sitio configurado en WordPress. |
+| **Tema en producción** | Decisión provisional de tema con alternativa a tema propio. | Se ratifica el uso del tema descargado **Twenty Twenty-Four** activo en producción en InfinityFree, ya que ha demostrado alta estabilidad técnica, carga fluida y compatibilidad con el editor de bloques. | Tema activo en el panel de InfinityFree y commit `60370dc`. |
+| **Formulario de contacto y respaldo directo** | Formulario proyectado exclusivamente vía correo con Contact Form 7. | Se mantiene Contact Form 7 y se añade en la página de Contacto un botón de contacto directo a WhatsApp (`https://wa.me/...`) como respaldo para asegurar que las solicitudes de cotizaciones de clientas no se pierdan por restricciones de correo del hosting gratuito. | Página `Contacto` en el sitio web publicado. |
+| **Estructura de páginas y menú** | Páginas proyectadas en planificación teórica. | Se implementaron en el menú de navegación las páginas **Inicio** y **Contacto** (obligatorias), junto a **Nosotros**, **Servicios** y **Blog**, asociando la portada a Inicio y la página de entradas al Blog. | Menú de navegación activo en `https://proyectotrenzadora.infinityfree.io/`. |
+| **Entradas del Blog** | 3 entradas iniciales de la Fase 1 sin enfoque temático definido. | Se estructuraron 3 entradas especializadas en trenzas africanas: cuidados para prolongar su duración, técnicas de lavado e hidratación del cuero cabelludo, y guía de estilos de trenzas. | Sección Blog del sitio con entradas publicadas. |
 
-**Decisión:** (continúo con mi propuesta / pivoteo, y por qué)
-
+**Decisión:** **Continúo con mi propuesta.** El sitio web se encuentra publicado y plenamente operativo en producción en InfinityFree (`https://proyectotrenzadora.infinityfree.io/`). El tema descargado Twenty Twenty-Four responde de manera rápida y adaptable en dispositivos móviles y de escritorio, cumpliendo con la presentación de la identidad visual de **Trenzadora** (paleta de colores, tipografía y logo). Las páginas obligatorias (Inicio y Contacto) y los contenidos del Blog están articulados según el plan original, por lo que no es necesario realizar un pivote de tema ni de arquitectura, avanzando con éxito hacia la entrega final del 25 de noviembre.
