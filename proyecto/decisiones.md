@@ -1,6 +1,6 @@
 # Decisiones de mi sitio
 
-**Emprendimiento:** Trenzadora (Proyecto trenzas marketing)  
+**Emprendimiento:** Trenzadora – Belleza en Trenzas Africanas (Proyecto trenzas marketing)  
 **Sitio en producción:** https://proyectotrenzadora.infinityfree.io/  
 **Fecha:** 4 de noviembre de 2026 · **Última corrección:** 18 de noviembre de 2026 (Checkpoint)
 
