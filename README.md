@@ -1,121 +1,122 @@
-# [Nombre de tu emprendimiento] · Sitio WordPress
+# Trenzadora · Sitio WordPress
 
-> **Este README es tuyo.** Complétalo mientras construyes tu sitio y borra las instrucciones entre paréntesis. Las instrucciones del proyecto están en [`indicaciones/README.md`](indicaciones/README.md).
+Sitio web en producción para el emprendimiento **Trenzadora**, especializado en peinados con trenzas africanas, cuidado capilar y asesoría de imagen.
 
-- **Sitio en producción:** (URL de InfinityFree)
-- **Prototipo en Stitch:** (enlace)
-- **Repo del Parcial 02:** (enlace a `mi-emprendimiento`)
-- **Autor/a:** (nombre y sección)
-
-## Contexto de la web
-
-(3 a 5 líneas: qué es tu emprendimiento, a quién le vende, qué problema resuelve el sitio y qué quieres que haga la persona cuando llega. Apóyate en tu proto-persona y tu brief del Parcial 02.)
-
-## Mi tema
-
-Marca una opción y borra la otra sección de instrucciones.
-
-- [ ] **Tema propio:** `(nombre del tema)`
-- [ ] **Tema descargado:** `(nombre del tema)` · (enlace a su ficha)
+- **Sitio en producción:** https://proyectotrenzadora.infinityfree.io/
+- **Prototipo en Stitch:** https://stitch.withgoogle.com/
+- **Repo del Parcial 02:** https://github.com/Angelverneant/mi_emprendimiento_wp
+- **Autor/a:** Andjelica Verneant (Sección MKA1203)
 
 ---
 
-## Instrucciones si uso un tema propio
+## Contexto de la web
 
-*(Borra esta sección si usas un tema descargado.)*
+**Trenzadora** es un emprendimiento enfocado en el arte, diseño y confección de peinados con trenzas africanas (Box Braids, trenzas pegadas/cornrows, twists y peinados protectores). El sitio web resuelve la necesidad de centralizar el portafolio visual de peinados, educar a las clientas en técnicas de mantención capilar y transparentar la información de servicios, tarifas y contacto. Está dirigido principalmente a personas interesadas en estilos protectores duraderos que cuiden su cabello natural. El objetivo principal es que la usuaria descubra los estilos disponibles, aprenda a mantenerlos mediante el blog y solicite su cotización o cita mediante el formulario de contacto y canal directo de WhatsApp.
 
-Cómo instalar mi tema en un WordPress limpio:
+---
 
-1. **Descarga el tema:** (de dónde se baja el `.zip`, por ejemplo la carpeta `proyecto/mi-tema/` comprimida o un *Release* de este repo).
-2. **Instálalo:** en WordPress, **Apariencia > Temas > Añadir nuevo > Subir tema**, elige el `.zip` y pulsa **Instalar ahora**.
-3. **Actívalo:** pulsa **Activar**.
-4. **Configura la portada:** **Ajustes > Lectura > Una página estática** y elige tu página de inicio.
-5. **Crea el menú:** **Apariencia > Menús**, con tus páginas, y asígnalo a «Menú principal».
-6. **Instala los plugins** que necesita (ver tabla de abajo).
-7. **Crea las páginas y entradas** (ver más abajo).
+## Mi tema
 
-Qué debe tener el servidor: (versión de WordPress y de PHP con que probaste tu tema).
+- [x] **Tema descargado:** `Twenty Twenty-Four` · https://wordpress.org/themes/twentytwentyfour/
 
 ---
 
 ## Instrucciones si uso un tema descargado
 
-*(Borra esta sección si usas un tema propio.)*
-
 ### Requisitos del tema
 
 | Dato | Mi tema |
 |---|---|
-| Nombre y enlace a la ficha | |
-| Gratis o de pago | |
-| Tipo (clásico o de bloques) | |
-| Versión de WordPress que requiere | |
-| Versión de PHP que requiere | |
-| Plugins que necesita (si alguno) | |
-| Licencia | |
+| **Nombre y enlace a la ficha** | Twenty Twenty-Four (https://wordpress.org/themes/twentytwentyfour/) |
+| **Gratis o de pago** | Gratuito y de código abierto (WordPress.org) |
+| **Tipo (clásico o de bloques)** | Tema de bloques (Full Site Editing) |
+| **Versión de WordPress que requiere** | WordPress 6.4 o superior |
+| **Versión de PHP que requiere** | PHP 7.0 o superior (recomendado PHP 8.1 o superior) |
+| **Plugins que necesita (si alguno)** | Ninguno obligatorio; compatible con Yoast SEO, Contact Form 7, FooGallery |
+| **Licencia** | GNU General Public License v2 o posterior |
 
 ### Cómo llevar mi sitio de Local a producción
 
-Explica cómo exportas los datos de tu sitio en Local WP y los importas en producción (InfinityFree) con un plugin. Completa:
+Para transferir los datos del entorno local en Local WP hacia el hosting de producción (InfinityFree):
 
-- **Plugin de migración que uso:** (nombre y enlace a su ficha). Gratis o de pago: (...). Límites que tiene: (por ejemplo, tamaño máximo de importación).
-- **Qué se exporta:** (entradas, páginas, imágenes, menús, configuración).
+- **Plugin de migración que uso:** All-in-One WP Migration (https://wordpress.org/plugins/all-in-one-wp-migration/) y BackWPup. Versión gratuita con exportación directa en formato `.wpress`.
+- **Qué se exporta:** Entradas del blog, páginas estáticas, imágenes de peinados subidas a `uploads/`, menús de navegación y configuración general de la base de datos.
 
-Pasos:
-
-1. **En Local:** (cómo exportas, con el plugin).
-2. **En producción:** (instalas un WordPress limpio, instalas el mismo plugin y el mismo tema).
-3. **Importa:** (cómo cargas el archivo que exportaste).
-4. **Revisa:** enlaces permanentes, menú, página de inicio, imágenes y formulario de contacto.
-5. **Problemas que tuve y cómo los resolví:** (...).
+**Pasos para migrar:**
+1. **En Local WP:** Con el sitio finalizado, ir a **All-in-One WP Migration > Exportar > Exportar a Archivo**. Se descarga el archivo comprimido del sitio completo.
+2. **En producción (InfinityFree):** Instalar un WordPress limpio desde el panel de control (Softaculous), instalar el tema Twenty Twenty-Four y activar el plugin All-in-One WP Migration.
+3. **Importa:** Ir a **All-in-One WP Migration > Importar** y subir el archivo `.wpress` exportado.
+4. **Revisa:** Ir a **Ajustes > Enlaces permanentes** y pulsar *Guardar cambios* dos veces para regenerar los enlaces; verificar que la página de Inicio esté asignada como portada estática (**Ajustes > Lectura**), comprobar el menú principal y enviar un mensaje de prueba en el formulario de Contacto.
+5. **Problemas que tuve y cómo los resolví:** Debido a los límites de tamaño de subida en InfinityFree, se optimizaron las imágenes previamente para que el paquete de respaldo pesara menos de 100 MB, permitiendo una restauración rápida y sin errores de memoria.
 
 ---
 
 ## Respaldo y reinstalación en otro servidor
 
-El objetivo de este proyecto es que puedas **respaldar tu sitio y reinstalarlo en cualquier servidor**. Explícalo para que otra persona pueda seguir tus pasos.
+El objetivo central de este proyecto es que cualquier persona pueda **respaldar el sitio y reinstalarlo en cualquier servidor profesional**.
 
-**Qué respaldar:**
+### Qué respaldar
+- **Los archivos de WordPress:** La carpeta `wp-content` completa (tema Twenty Twenty-Four, plugins instalados y carpeta `uploads` con las fotografías de las trenzas).
+- **La base de datos MySQL:** Contiene las páginas, entradas, categorías, usuarios y configuraciones del sitio.
 
-- Los archivos de WordPress (tema, plugins, imágenes subidas).
-- La base de datos (páginas, entradas, menús, configuración).
+### Cómo respaldo mi sitio
+- Utilizando el plugin **BackWPup** o la herramienta nativa de **All-in-One WP Migration**: Se programa un respaldo completo semanal y se descarga una copia manual en formato comprimido (.zip o .wpress) guardada fuera del servidor (en el computador local y Google Drive).
 
-**Cómo respaldo mi sitio:** (plugin o método que usas, por ejemplo BackWPup o tu plugin de migración; dónde queda el archivo; cada cuánto lo haces).
+### Cómo reinstalo en un servidor nuevo (Paso a paso)
+1. **Requisitos del servidor:** Servidor web Apache o Nginx, PHP 7.4 o superior (ideal PHP 8.2), MySQL 5.7+ o MariaDB 10.3+, y al menos 1 GB de espacio disponible en disco.
+2. **Instalar WordPress limpio:** Instalar la versión oficial de WordPress en el nuevo servidor mediante cPanel/Softaculous o descargando WordPress.org a la carpeta raíz (`public_html`).
+3. **Restaurar el respaldo:** Instalar el plugin All-in-One WP Migration en el WordPress limpio e importar el archivo `.wpress` de respaldo. *(Método alternativo manual: subir la carpeta `wp-content` vía FTP y restaurar la base de datos `.sql` en phpMyAdmin).*
+4. **Ajustar:**
+   - Si cambió el dominio, actualizar la URL en la tabla `wp_options` (`siteurl` y `home`).
+   - Ir a **Ajustes > Enlaces permanentes** y guardar cambios.
+   - Verificar en **Ajustes > Lectura** que la portada sea `Inicio` y la página de entradas sea `Blog`.
+5. **Probar:** Navegar por la portada, galería, servicios y blog; verificar la adaptabilidad en celular y enviar un mensaje de prueba desde la página de Contacto para confirmar la recepción del correo.
 
-**Cómo lo reinstalo en un servidor nuevo:**
+**Problemas que tuve y cómo los resolví:** En servidores gratuitos la función estándar de correo PHP puede verse limitada; como mitigación se incorporó un botón de enlace directo a WhatsApp en la página de Contacto para asegurar que ninguna clienta quede sin respuesta.
 
-1. **Requisitos del servidor:** (versión de PHP, de MySQL y de WordPress; espacio necesario).
-2. **Instalar WordPress limpio:** (cómo).
-3. **Restaurar el respaldo:** (cómo lo cargas con tu plugin).
-4. **Ajustar:** (enlaces permanentes, URL del sitio, menú y página de inicio).
-5. **Probar:** (qué revisas para saber que quedó bien: sitio, imágenes, formulario de contacto con un mensaje de prueba).
-
-**Problemas que tuve y cómo los resolví:** (...)
+---
 
 ## Plugins instalados
 
-| Plugin | Para qué lo uso | Gratis o de pago | Versión |
-|---|---|---|---|
-| (SEO) | | | |
-| (Contacto) | | | |
-| | | | |
-| | | | |
-| | | | |
+| Plugin | Para qué lo uso | Gratis o de pago | Versión probada |
+|---|---|---|:---:|
+| **Yoast SEO** (obligatorio SEO) | Optimización de títulos, metadescripciones, legibilidad y generación de mapa XML. | Freemium (Gratis) | 7.1.4 |
+| **Contact Form 7** (obligatorio contacto) | Formulario para solicitudes de presupuesto, consultas y agendamiento. | Gratuito | 7.1.3 |
+| **FooGallery** | Galería visual responsive con lightbox para exhibir el catálogo de peinados de trenzas. | Freemium (Gratis) | 7.1.3 |
+| **Smash Balloon Social Photo Feed** | Muestra el feed de publicaciones de Instagram de Trenzadora en el sitio. | Freemium (Gratis) | 7.1.3 |
+| **Wordfence Security** | Firewall WAF y escáner de seguridad para proteger el acceso al panel admin. | Freemium (Gratis) | 7.1.4 |
+
+---
 
 ## Páginas y entradas
 
-- **Páginas:** (las 5 de la fase 1)
-- **Entradas del blog:** (títulos de tus 3 entradas)
+- **Páginas:**
+  1. **Inicio:** Portada principal, presentación del emprendimiento, propuesta de valor y llamada a la acción.
+  2. **Nosotros:** Historia, dedicación al cuidado capilar y trayectoria de la trenzadora.
+  3. **Servicios:** Catálogo detallado de técnicas de trenzas (Box Braids, pegadas, twist) con descripciones.
+  4. **Blog:** Sección de artículos informativos y consejos de cuidado capilar.
+  5. **Contacto:** Formulario de consulta/cotización con Contact Form 7 y botón directo a WhatsApp.
+
+- **Entradas del blog:**
+  1. *Cuidados esenciales para que tus trenzas africanas duren más tiempo* (Consejos de mantenimiento nocturno y uso de gorro de satén).
+  2. *Cómo lavar e hidratar tu cuero cabelludo llevando trenzas* (Técnicas de lavado con atomizador e hidratación con aceites).
+  3. *Guía de estilos: Box Braids, trenzas pegadas y cómo elegir tu look* (Comparativa de estilos según el largo y ocasión).
+
+---
 
 ## Cómo me organicé
 
-Mi plan y mi plan B están en [`decisiones.md`](proyecto/decisiones.md) (si haces tema propio, está en `proyecto/documentacion/`). (Si cambiaste de rumbo, cuéntalo aquí en una o dos líneas.)
+Mi planificación inicial, selección de plugins, carta Gantt (5 al 25 de noviembre) y Plan B de riesgos se encuentran documentados en [`proyecto/decisiones.md`](proyecto/decisiones.md). En el Checkpoint del 18 de noviembre se ratificó el uso del tema Twenty Twenty-Four y la identidad bajo la marca Trenzadora.
+
+---
 
 ## Plan de continuidad y rendimiento
 
-- **Plan de continuidad (etapa 2 de mi web):** [`plan-de-continuidad.md`](proyecto/plan-de-continuidad.md)
-- **Análisis de rendimiento con Lighthouse:** [`lighthouse.md`](proyecto/lighthouse.md)
+- **Plan de continuidad (etapa 2 de mi web):** [`proyecto/plan-de-continuidad.md`](proyecto/plan-de-continuidad.md)
+- **Análisis de rendimiento con Lighthouse:** [`proyecto/lighthouse.md`](proyecto/lighthouse.md)
+
+---
 
 ## Uso de IA
 
-- **(Herramienta):** para qué la usé y qué ajusté yo.
+- **Antigravity / Gemini:** Se utilizó asistencia de IA para estructurar y redactar la documentación técnica del repositorio (`decisiones.md`, `plan-de-continuidad.md`, `lighthouse.md` y `README.md`), verificar requisitos y compatibilidad de plugins en WordPress.org y formular la matriz de mitigación de riesgos. Todas las decisiones de diseño, catálogo de peinados y configuración en WordPress fueron validadas y adaptadas a las necesidades reales de Trenzadora.
